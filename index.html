@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjeta de Navidad</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f3e461;
+      }
+
+      .card {
+        width: 640px;
+        height: 400px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        perspective: 1200px;
+        transition: 1s;
+      }
+
+      /* Resto de tus estilos existentes */
+
+      .inside {
+        background: linear-gradient(to right, #b1e6ff, #61fc95 70%);
+        line-height: 1.6; /* Ajusta el espaciado entre líneas */
+        padding: 20px; /* Añade un espacio alrededor del texto */
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="outside">
+            <div class="front">
+                <p>Mi carta para Navidad</p>
+                <div class="cake">
+                    <div class="top-layer"></div>
+                    <div class="middle-layer"></div>
+                    <div class="bottom-layer"></div>
+                    <div class="candle"></div>
+                </div>
+            </div>
+            <div class="back">
+                <p>Feliz Navidad</p>
+                <h1>&#127873;</h1>
+                <!-- Agrega el GIF debajo de "FELIZ NAVIDAD" -->
+                <img src="https://pa1.aminoapps.com/7071/d08fa61473f2077a7d6ebbf0b99a503647a734d2r1-480-258_00.gif" alt="GIF de Navidad" style="width: 400px; height: 300px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" />
+            </div>
+        </div>
+        <div class="inside">
+            <p>QUERIDO PAPÁ NOEL,</p>
+            <p>Este año, en Navidad, tengo un deseo muy especial. Me gustaría mucho tener un carro a control remoto. He estado soñando con tener uno durante mucho tiempo, y sé que sería el regalo perfecto para mí. Imagino la diversión que tendría corriendo ese carro por el patio y explorando nuevas aventuras.</p>
+            <p>Prometo cuidarlo y jugar con él todos los días. Sería el regalo de mis sueños, y estoy emocionado por la posibilidad de encontrarlo debajo del árbol de Navidad en la mañana de Navidad.</p>
+            <p>Gracias, Papá Noel, por hacer realidad nuestros sueños en esta temporada mágica.</p>
+            <p>Con cariño, Santi</p>
+            <h1>&#127873;</h1>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

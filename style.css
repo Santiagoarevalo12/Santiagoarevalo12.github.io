@@ -1,0 +1,129 @@
+/* Estilos globales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilos del cuerpo de la página */
+body {
+  background-color: #f3e461;
+}
+
+/* Estilos de la tarjeta */
+.card {
+  width: 640px;
+  height: 400px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  perspective: 1200px;
+  transition: 1s;
+}
+
+.card:hover {
+  transform: rotate(-5deg);
+}
+
+.card:hover .outside {
+  transform: rotateY(-130deg);
+}
+
+/* Estilos de las partes exterior e interior */
+.outside,
+.inside {
+  height: 130%;
+  width: 80%;
+  position: absolute;
+  left: 40.1%;
+}
+
+/* Estilos del interior de la tarjeta */
+.inside {
+  background: linear-gradient(to right, #b1e6ff, #61fc95 70%);
+  line-height: 3;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Estilos de la parte exterior de la tarjeta */
+.outside {
+  transform-style: preserve-3d;
+  z-index: 1;
+  transform-origin: left;
+  transition: 2s;
+  cursor: pointer;
+}
+
+/* Estilos de las caras frontal y trasera de la tarjeta */
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+
+/* Estilos de la cara frontal de la tarjeta */
+.front {
+  background-color: #b5eeff;
+}
+
+/* Estilos de la cara trasera de la tarjeta */
+.back {
+  transform: rotateY(180deg);
+  background: linear-gradient(to right, #b1e6ff, #61fc95 70%);
+}
+
+/* Estilos del pastel */
+.cake {
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
+}
+
+/* Estilos de la capa inferior */
+.bottom-layer {
+  height: 300px;
+  width: 290px; /* Ajusta el ancho de acuerdo a tus necesidades */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el espacio */
+  background-position: center; /* Centra la imagen horizontal y verticalmente */
+  /* Cambia la URL de la imagen a la que deseas utilizar como fondo */
+  background-image: url('https://3.bp.blogspot.com/-LnqXB0fJ7YI/Uq4qruLNEXI/AAAAAAAAlIo/El1bvzsxoVw/s1600/papa3.gif'),
+                    linear-gradient(
+                        transparent 100%,
+                        #ff0404 30px,
+                        #2db80a 100px,
+                        transparent 60px
+                    );
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  margin: auto;
+}
+
+/* Estilos del texto en la parte exterior */
+.outside p {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: #000029;
+}
+
+/* Estilos del título en la parte interior */
+.inside h1 {
+  font-size: 120px;
+  line-height: 120px;
+}
+
