@@ -8,7 +8,7 @@
 
 /* Estilos del cuerpo de la página */
 body {
-  background-color: #f3e461;
+  background-color: #ffe600;
 }
 
 /* Estilos de la tarjeta */
@@ -75,7 +75,7 @@ body {
 
 /* Estilos de la cara frontal de la tarjeta */
 .front {
-  background-color: #b5eeff;
+  background: linear-gradient(to right, #b1e6ff, #61fc95 70%);
 }
 
 /* Estilos de la cara trasera de la tarjeta */
